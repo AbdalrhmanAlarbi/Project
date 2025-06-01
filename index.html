@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع شخصي</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="site-header">
+        <h1 id="site-title">عبد الرحمن العربي</h1>
+        <p id="site-tagline">مطور ومصمم ويب</p>
+    </header>
+
+    <nav id="main-navigation">
+        <ul id="nav-list">
+            <li><a href="#about-section">نبذة عني</a></li>
+            <li><a href="#skills-section">المهارات</a></li>
+            <li><a href="#projects-section">المشاريع</a></li>
+            <li><a href="#contact-section">اتصل بي</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <section id="about-section">
+            <h2>نبذة عني</h2>
+            <article id="about-content">
+                <figure id="profile-image">
+                    <img src="" alt="غير متوفر">
+                </figure>
+                <p>مرحباً! أنا عبد الرحمن العربي، طالب جامعي أدرس حالياً مقررات في لغة C# وتطوير تطبيقات سطح المكتب. أستمتع أيضاً بإنشاء صفحات الويب وتصميم واجهات جذابة وسهلة الاستخدام.</p>
+                <p>عندما لا أكون مشغولاً بالدراسة أو البرمجة، أحب استكشاف تقنيات جديدة في تطوير الويب وتطوير مهاراتي في تصميم التطبيقات.</p>
+            </article>
+        </section>
+
+        <section id="skills-section">
+            <h2>مهاراتي</h2>
+            <article id="technical-skills">
+                <ul>
+                    <li>HTML5 and CSS3</li>
+                    <li>Responsive Design</li>
+                    <li>C#</li>
+                    <li>C++</li>
+                    <li>SQL</li>
+                </ul>
+            </article>
+        </section>
+
+
+        <section id="projects-section">
+            <h2>المشاريع</h2>
+            <article id="project-1" class="project">
+                <h3>موقع تجارة إلكترونية</h3>
+                <p>موقع تجارة إلكترونية متجاوب بالكامل مع تصفية المنتجات، وظائف سلة التسوق، وخيارات دفع آمنة.</p>  
+            </article>
+
+            <article id="project-2" class="project">
+                <h3>قالب معرض أعمال</h3>
+                <p>قالب معرض أعمال نظيف وحديث للمحترفين المبدعين مع أقسام قابلة للتخصيص.</p>       
+            </article>
+
+            <article id="project-3" class="project">
+                <h3>تطبيق الطقس</h3>
+                <p>تطبيق طقس يوفر تنبؤات في الوقت الحقيقي باستخدام واجهة برمجة تطبيقات خارجية.</p>
+            </article>
+        </section>
+
+
+        <section id="contact-section">
+            <h2>اتصل بي</h2>
+            <address id="contact-details">
+                <p>البريد الإلكتروني: <a href="mailto:abdalrhmanalarbi5@gmail.com">abdalrhmanalarbi5@gmail.com</a></p>
+                <p>الهاتف: <a href="tel:+1234567890">0921208745</a></p>
+                <p>الموقع: طرابلس , حي دمشق </p>
+            </address>
+            
+            <form id="contact-form">
+                <fieldset>
+                    <legend>أرسل لي رسالة</legend>
+                    
+                    <label for="name">الاسم:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">البريد الإلكتروني:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">الرسالة:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    
+                    <button type="submit" id="submit-button">إرسال الرسالة</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer id="site-footer">
+        <p id="copyright">© 2025 عبد الرحمن العربي - جميع الحقوق محفوظة.</p>
+        <nav id="social-links">
+            <ul>
+                <li><a href="https://github.com/AbdalrhmanAlarbi" aria-label="GitHub">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/abdo-alarbi-9ba487247/" aria-label="LinkedIn">LinkedIn </a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
