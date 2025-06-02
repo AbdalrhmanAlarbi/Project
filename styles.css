@@ -1,10 +1,4 @@
-/* 
-   موقع شخصي - أنماط CSS مبسطة
-   صفحة أنماط نظيفة وسهلة الفهم
-*/
 
-/* ===== الأنماط العامة ===== */
-/* ===== Reset and Global Styles ===== */
 * {
     margin: 0;
     padding: 0;
@@ -13,157 +7,125 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    line-height: 1.8;
     color: #333;
     background-color: #f9f9f9;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
 h1, h2, h3 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #2c3e50;
 }
 
 a {
-    color: #3498db;
+    color: #2980b9;
     text-decoration: none;
 }
 
 a:hover {
-    color: #2980b9;
+    color: #182832;
     text-decoration: underline;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-ul {
-    list-style-position: inside;
-}
 
 /* ===== Header Section ===== */
 #site-header {
     text-align: center;
-    padding: 40px 0;
+    padding: 20px 0;
     background-color: #2c3e50;
     color: white;
-    border-radius: 0 0 10px 10px;
-}
-
-#site-title {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    border-radius: 0 0 30px 30px;
 }
 
 #site-tagline {
-    font-size: 1.2rem;
+    font-size: 2.0rem;
     font-style: italic;
 }
+
 
 /* ===== Navigation Menu ===== */
 #main-navigation {
     background-color: #34495e;
-    border-radius: 10px;
-    margin: 20px 0;
+    border-radius: 30px;
+    margin: 40px 0;
 }
 
 #nav-list {
-    display: flex;
+    
     justify-content: center;
     list-style-type: none;
+    display: flex;
     flex-wrap: wrap;
-}
-
-#nav-list li {
-    padding: 15px 0;
 }
 
 #nav-list a {
     color: white;
-    padding: 15px 20px;
+    padding: 10px 20px;
     font-weight: bold;
+    font-size: 1.1rem;
+
+    display: block;
+    margin: 5px 15px;
+    border-radius: 40px 40px;
 }
 
 #nav-list a:hover {
-    background-color: #2c3e50;
+    background-color: #616365;
     text-decoration: none;
 }
 
-/* ===== Main Content ===== */
-#main-content {
-    margin: 40px 0;
-}
 
+/* ===== Main Content ===== */
 section {
     background-color: white;
-    border-radius: 10px;
-    padding: 30px;
-    margin-bottom: 30px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 60px;
+    box-shadow: 0 0 10px 1px;
 }
 
 section h2 {
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+    border-bottom: 5px solid #3498db;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
 }
+
 
 /* ===== About Section ===== */
 #about-section {
+    margin: 50px 0;
     text-align: center;
 }
 
 #profile-image img {
     border-radius: 50%;
-    border: 3px solid #3498db;
+    border: 3px solid #000000;
     margin-bottom: 20px;
 }
 
+
 /* ===== Skills Section ===== */
-#skills-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-#skills-section h2 {
-    width: 100%;
-}
-
-#technical-skills {
-    flex-basis: 100%;
-}
-
 #technical-skills li {
     padding: 8px 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 3px solid #b7b7b7;
     list-style-type: none;
 }
 
+
 /* ===== Projects Section ===== */
-#projects-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-#projects-section h2 {
-    width: 100%;
-}
-
-.project {
-    flex-basis: 30%;
-    margin-bottom: 30px;
-    text-align: center;
+.project p {
+    border-bottom: 3px solid #b7b7b7;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .project h3 {
     color: #3498db;
 }
+
 
 /* ===== Contact Section ===== */
 #contact-details {
@@ -172,9 +134,9 @@ section h2 {
 }
 
 #contact-form fieldset {
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 5px;
+    border: 3px solid #bcbbbb;
+    padding: 30px;
+    border-radius: 10px;
 }
 
 #contact-form legend {
@@ -183,16 +145,27 @@ section h2 {
     color: #3498db;
 }
 
+form {
+    max-width: 1000px;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px; 
+    max-height: 300px; 
+}
+
 #contact-form label {
     display: block;
-    margin: 15px 0 5px;
+    margin: 15px 0 10px;
 }
 
 #contact-form input,
 #contact-form textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 3px solid #ddd;
     border-radius: 5px;
 }
 
@@ -200,25 +173,28 @@ section h2 {
     background-color: #3498db;
     color: white;
     border: none;
-    padding: 12px 20px;
+    padding: 15px 15px;
     margin-top: 20px;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+    font-size: 1.1rem;
 }
 
 #submit-button:hover {
     background-color: #2980b9;
 }
 
+
+
 /* ===== Footer ===== */
 #site-footer {
     background-color: #2c3e50;
     color: white;
     text-align: center;
-    padding: 20px;
-    border-radius: 10px 10px 0 0;
-    margin-top: 40px;
+    padding: 10px;
+    border-radius: 20px 20px 0 0;
+    margin-top: 30px;
 }
 
 #social-links ul {
@@ -226,32 +202,14 @@ section h2 {
     justify-content: center;
     list-style-type: none;
     padding: 0;
+    color : white;
 }
 
 #social-links li {
-    margin: 0 15px;
+    margin: 5px 30px;
+    padding-top: 10px;
 }
 
 #social-links a {
     color: white;
-}
-
-/* ===== Responsive Design ===== */
-@media (max-width: 768px) {
-    #nav-list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #skills-section {
-        flex-direction: column;
-    }
-
-    #technical-skills {
-        flex-basis: 100%;
-    }
-
-    .project {
-        flex-basis: 100%;
-    }
 }
